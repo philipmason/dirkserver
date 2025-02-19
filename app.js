@@ -37,6 +37,7 @@ app.get("/api", (req, res) => {
 });
 
 // http://localhost:3000/sql/wedding/insert%20into%20responses(name)%20values('%20dirk')
+// http://localhost:3000/sql/wedding/select%20*%20from%20guests
 app.get("/sql/:db/:code", (req, res) => {
   console.log("db", req.params.db, "code", req.params.code);
   const db = eval(req.params.db),
